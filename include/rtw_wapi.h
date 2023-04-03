@@ -29,6 +29,7 @@
 /* WAPI trace debug */
 extern u32 wapi_debug_component;
 
+
 static inline void dump_buf(u8 *buf, u32 len)
 {
 	u32 i;
@@ -37,6 +38,7 @@ static inline void dump_buf(u8 *buf, u32 len)
 		printk("%2.2x-", *(buf + i));
 	printk("\n");
 }
+
 
 #define WAPI_TRACE(component, x, args...) \
 	do { if (wapi_debug_component & (component)) \

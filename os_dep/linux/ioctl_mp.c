@@ -2658,7 +2658,7 @@ int rtw_bt_efuse_file_map(struct net_device *dev,
 	return 0;
 }
 
-
+/*
 static inline void dump_buf(u8 *buf, u32 len)
 {
 	u32 i;
@@ -2668,6 +2668,7 @@ static inline void dump_buf(u8 *buf, u32 len)
 		RTW_INFO("%2.2x-", *(buf + i));
 	RTW_INFO("\n");
 }
+*/
 
 int rtw_mp_link(struct net_device *dev,
 			struct iw_request_info *info,
